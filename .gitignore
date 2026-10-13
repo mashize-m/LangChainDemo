@@ -35,3 +35,6 @@ htmlcov/
 
 # 日志
 *.log
+
+# 项目依赖文件
+requirements.txt

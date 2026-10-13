@@ -9,6 +9,13 @@ LangChain 学习项目，按课程进度组织代码。
 uv sync 
 
 # 复制 `.env.example` 为 `.env`，填入你的 API Key。
+
+# 设置python解释器路径
+① 打开 Settings → Project: 项目名称 → Python Interpreter。
+② 点击右侧的 Add Interpreter（添加解释器）。
+③ 选择 Add Local Interpreter（添加本地解释器）
+④ 点击 截图红色提示框里的蓝色链接 Select existing interpreter（选择现有解释器）/ 或者是点击 圆圈选项 Select existing（选择现有）
+⑤ python路径，这里选择 有当前项目名称\.venv 路径下的python.exe 的路径。
 ```
 
 ## 运行示例
