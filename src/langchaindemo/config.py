@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 ROOT_DIR = Path(__file__).resolve().parents[2]
 load_dotenv(ROOT_DIR / ".env")
 
+
 # 智普
-ZHIPU_API_KEY = os.getenv("ZHIPU_API_KEY")
-ZHIPU_BASE_URL = os.getenv("ZHIPU_BASE_URL")
-ZHIPU_MODEL = os.getenv("ZHIPU_MODEL")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL")
 
