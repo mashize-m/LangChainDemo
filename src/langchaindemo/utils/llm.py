@@ -1,30 +1,54 @@
-# from langchain_openai import ChatOpenAI
 
+from langchain.chat_models import init_chat_model
+from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_openai import ChatOpenAI
 from openai import OpenAI
 from langchaindemo.config import (
-    ZHIPU_API_KEY,
-    ZHIPU_BASE_URL,
-    ZHIPU_MODEL,
+    OPENAI_API_KEY,
+    OPENAI_BASE_URL,
+    OPENAI_MODEL,
 )
 import json
 
-client = OpenAI(
-	base_url=ZHIPU_BASE_URL, # 平台提供的 URL,默认可省略
-	api_key=ZHIPU_API_KEY, # 平台提供的 API-Key,默认可省略
-)
-resp = client.chat.completions.create(
-	model=ZHIPU_MODEL, # 模型名称
-	messages=[{"role": "user", "content": "将'你好'翻译成英语"}], # 用户输入
-)
+"""
+生成实例方式
+"""
+# client = init_chat_model(
+# 	model=OPENAI_MODEL,
+# 	model_provider="openai",
+# )
+client = ChatOpenAI(
+        model=OPENAI_MODEL,
+        temperature=0.0,
+        base_url=OPENAI_BASE_URL,
+        api_key=OPENAI_API_KEY,
+    )
+
+"""
+调用方式
+"""
+# 方式1
+# resp = client.invoke("你是谁？")
+# 方式2
+# resp = client.invoke([
+# 	SystemMessage(content="你是一个专业的数学助手"),
+# 	HumanMessage(content="计算1+1")
+# ])
+# 方式3
+# messages_list = [("system","你是一个专业的数学助手"),("user","计算2+2")]
+# resp = client.invoke(messages_list)
+# 方式4
+# messages_list = [{"role":"system","content":"你是一个专业的数学助手"},{"role":"user","content":"计算3+3"}]
+# resp = client.invoke(messages_list)
+
+
+"""
+交互方式
+"""
+
 
 print(json.dumps(resp.model_dump(), indent=2, ensure_ascii=False))
 
-print(resp.choices[0].message.content)
+# print(resp)
+print(resp.content)
 
-
-# def get_llm():
-#     """返回一个配置好的 DeepSeek LLM 实例。"""
-#     return ChatOpenAI(
-#         api_key=ZHIPU_API_KEY,
-#         base_url=ZHIPU_BASE_URL,
-#     )
