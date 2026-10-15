@@ -25,7 +25,8 @@ data/*
 !data/.gitkeep
 
 # Jupyter Notebook
-.ipynb_checkpoints/
+notebooks/*
+!notebooks/.gitkeep
 
 # 测试与缓存
 .pytest_cache/

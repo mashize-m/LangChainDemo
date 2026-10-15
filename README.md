@@ -58,8 +58,8 @@ LangChainDemo/
         ├── lessons/              # 课程代码（按课号）
         │   ├── __init__.py
         │   ├── lesson01_llm.py
-        │   ├── lesson02_rag.py
-        │   ├── 03_output_parser.py
+        │   ├── lesson02_md_splitter.py
+        │   ├── lesson03_unstructured_loader.py
         │   ├── 04_chain.py
         │   ├── 05_memory.py
         │   ├── 06_agent.py
@@ -77,3 +77,14 @@ LangChainDemo/
             ├── __init__.py
             └── llm.py            # 统一创建 LLM 实例
 ```
+
+## 🎨 PyCharm 文件颜色速查：
+    🔴 红色（暗红色）：新建的文件，尚未加入 Git 版本控制（Untracked）。
+    
+    🟢 绿色：新文件已经执行过 git add（已暂存，准备提交）。
+    
+    🔵 蓝色：已加入 Git 的旧文件被修改了（Modified）。
+    
+    ⚪ 灰色（或普通颜色）：文件已提交（Committed），且无新修改。
+    
+    🟡 黄色/橄榄色：文件被 Git 忽略（在 .gitignore 中）。
