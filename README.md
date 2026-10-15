@@ -57,8 +57,8 @@ LangChainDemo/
         │
         ├── lessons/              # 课程代码（按课号）
         │   ├── __init__.py
-        │   ├── lesson01_hello_llm.py
-        │   ├── 02_prompt_template.py
+        │   ├── lesson01_llm.py
+        │   ├── lesson02_rag.py
         │   ├── 03_output_parser.py
         │   ├── 04_chain.py
         │   ├── 05_memory.py

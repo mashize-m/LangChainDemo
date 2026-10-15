@@ -1,0 +1,5 @@
+from langchaindemo.config import (
+    OPENAI_API_KEY,
+    OPENAI_BASE_URL,
+    OPENAI_MODEL,
+)
