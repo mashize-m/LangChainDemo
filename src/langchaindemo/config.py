@@ -11,4 +11,6 @@ load_dotenv(ROOT_DIR / ".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL")
+# mineru API TOKEN
+MINERU_TOKEN = os.getenv("MINERU_TOKEN")
 

@@ -55,15 +55,23 @@ LangChainDemo/
         ├── main.py               # 应用入口（需新建）
         ├── config.py             # 统一配置（需新建）
         │
-        ├── lessons/              # 课程代码（按课号）
+        ├── reg_lessons/              # RAG课程代码（按课号）
         │   ├── __init__.py
         │   ├── lesson01_llm.py
         │   ├── lesson02_md_splitter.py
-        │   ├── lesson03_unstructured_loader.py
-        │   ├── 04_chain.py
-        │   ├── 05_memory.py
-        │   ├── 06_agent.py
-        │   └── 07_rag.py
+        │   ├── lesson03_unstructured_md_loader.py
+        │   ├── lesson04_docx2txt_loader.py
+        │   ├── lesson05_unstructured_docx_loader.py
+        │   ├── lesson06_mineru_pdf_parser.py
+        │   ├── lesson07_mineru_zip_to_docs.py
+        │   ├── lesson08_embedding.py
+        │   ├── lesson09_bge_m3_hybrid_embedding.py
+        │   ├── lesson10_milvus_create_collection.py
+        │   ├── lesson11_milvus_insert_data.py
+        │   ├── lesson12_milvus_delete_data.py
+        │   ├── lesson13_milvus_search.py
+        │   ├── lesson14_milvus_scalar_query.py
+        │   └── lesson15_rag_generation.py
         │
         ├── prompts/              # 可复用提示词模板
         │   ├── __init__.py
