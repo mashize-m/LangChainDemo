@@ -14,3 +14,7 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL")
 # mineru API TOKEN
 MINERU_TOKEN = os.getenv("MINERU_TOKEN")
 
+# tivily api key
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+
+
